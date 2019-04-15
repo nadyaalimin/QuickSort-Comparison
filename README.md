@@ -1,4 +1,7 @@
-# Sequential and Parallel Quicksort Comparison
+# Quicksort-Comparison
+
+Operation System  UPH 2017/1028 - Parallel vs Singular Quicksort Comparison
+
 This repository is created to compare the time needed for sequential and parallel quicksort on Ubuntu, the quicksort file is build on C programming language and sample datas are provided in txt file format.
 
 # Dependency
@@ -32,7 +35,7 @@ The test is done by both sequential and parallel quicksort programs to find the 
 |10000      |7.1169880 s|17.218164 s|30.900057 s|5.8697420 s|15.27623775 s|
 
 ## Explanation and Comparison
-The above data might differ as it is different time process using one machine and another. After test is done, we would like to see the data compared in a graph from the average time of each sample as below. With the orange line as parallel quicksort while blue line as sequential quicksort.
+The data above shows the time needed for quicksorting done with Sequential and Parallel Quicksort. The data compared can be seen below, with the orange line as parallel quicksort while blue line as sequential quicksort.
 
 ### Singular Quicksort vs Parallel Quicksort Time Comparison
 
@@ -43,11 +46,11 @@ The above data might differ as it is different time process using one machine an
 |1000       |0.00108225 s|1.040360750 s|
 |10000      |0.08582225 s|15.27623775 s|
 
-![SeqAndPar](https://github.com/winstonrenatan/quicksort_comparison/blob/master/SeqAndPar.PNG)<br>
+![Quicksort Graph](https://github.com/nadyaalimin/QuickSort-Comparison/blob/master/chart.png)<br>
 
 ### Result analysis
 
-As the result we could see that parallel quicksort takes more time compared to sequential quicksort. That happens especially when the sample size increase to bigger size. Where at 10-1000 samples, it may takes 0. seconds and it increase much bigger when the data becomes 10000. When working with parallel quicksort there are some jobs that should be done such as parallelism job, spawning thread, synchronization time, etc. On the other hand, sequential sort is just doing the sort normally with algorithm given without any supplement on parallelism tasks.
+From the result above, we can see that sequential quicksort is faster than parallel quicksort. The sample size and the test may affect the result. According to Tinku Singh and Durgesh Kumar Srivastava, When working with parallel quicksort there are some jobs that should be done such as parallelism job, spawning thread, synchronization time, etc. On the other hand, sequential sort is just doing the sort normally with algorithm given without any supplement on parallelism tasks.
 
 ## Authors
 
