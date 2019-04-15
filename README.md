@@ -4,16 +4,14 @@ This repository is created to compare the time needed for sequential and paralle
 # Dependency
 [GCC](https://linuxconfig.org/how-to-install-gcc-the-c-compiler-on-ubuntu-18-04-bionic-beaver-linux)
 
-
 ## Installation/running instruction
 - Download the files on folder "Quicksort".
 - Open terminal and get to the directory path (the place where you put the files).
-- Type on "g++ quicksort.c -o quicksort -fopenmp" to compile the sequential quicksort. While "g++ quicksort_parallel.c -o quicksort_parallel -fopenmp" for parallel quicksort. Those command are written without quotations marks.
-* For parallel quicksort if the above command fails, try "g++ quicksort_parallel.c -o quicksort_parallel -fopenmp -fpermissive" without quotes.
+- Type on "g++ quicksort.c -o quicksort -fopenmp" to compile the sequential quicksort. While "g++ quicksort_parallel.c -o quicksort_parallel -fopenmp -fpermissive" for parallel quicksort. Those command are written without quotations marks.
 - After successfully compiling the file, execute it with the command "./quicksort (samplesize).txt" without quotes. (samplesize) will be changed with 10, 100, 1000, or 10000. Remember to delete the brackets.
 
 ## Sample Input and Time Data
-These are the result of testing with both sequential and parallel quicksort from the txt data given. Here, I tried to test for four times and take the average result for the comparison.
+The test is done by both sequential and parallel quicksort programs to find the average time taken to finish quicksorting with sample size txt file given (10, 100, 1000, 10000) and I take 4 times test taken.
 
 ### Sequential Quicksort
 
@@ -47,8 +45,13 @@ The above data might differ as it is different time process using one machine an
 
 ![SeqAndPar](https://github.com/winstonrenatan/quicksort_comparison/blob/master/SeqAndPar.PNG)<br>
 
-### Result
+### Result analysis
+
 As the result we could see that parallel quicksort takes more time compared to sequential quicksort. That happens especially when the sample size increase to bigger size. Where at 10-1000 samples, it may takes 0. seconds and it increase much bigger when the data becomes 10000. When working with parallel quicksort there are some jobs that should be done such as parallelism job, spawning thread, synchronization time, etc. On the other hand, sequential sort is just doing the sort normally with algorithm given without any supplement on parallelism tasks.
+
+## Authors
+
+* **Nadya Natasha Alimin** - Informatics UPH 2017
 
 ## Acknowledgements
 - [Quicksort Program](https://github.com/markwkm/quicksort)
